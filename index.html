@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Kitchen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="operators-data.js" defer></script>
+  <script src="inverse-operators-data.js" defer></script>
+  <script src="help-data.js" defer></script>
+  <script src="behaviors-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="viewport" aria-label="The Kitchen operator library">
+    <div id="window">
+      <section id="main-menu" aria-label="Main menu">
+        <button id="start" aria-label="Start"></button>
+        <button id="help" type="button" aria-label="Help: read AGENTS.md"></button>
+      </section>
+      <section id="selection-menu" aria-label="Choose an operator" hidden>
+        <div class="window-controls" aria-label="Window controls">
+          <button id="minimize" class="window-control icon-minimize" aria-label="Minimize: return to main menu"></button>
+          <button id="maximize" class="window-control icon-maximize" aria-label="Maximize" title="Maximize"></button>
+          <button id="home" class="window-control icon-close" aria-label="Close: return to main menu"></button>
+        </div>
+        <div id="operator-list" aria-label="Operators"></div>
+      </section>
+      <section id="text-menu" class="text-panel" role="dialog" aria-modal="true" aria-labelledby="text-title" hidden>
+        <header><span id="text-title"></span><button id="close-text" class="window-control icon-close" aria-label="Back to operators"></button></header>
+        <article id="operator-text" class="reader-text" tabindex="0" aria-label="Operator text"></article>
+      </section>
+      <section id="voice-menu" class="text-panel" role="dialog" aria-modal="true" aria-labelledby="voice-title" hidden>
+        <header><span id="voice-title"></span><button id="close-voice" class="window-control icon-close" aria-label="Back to operator text"></button></header>
+        <article id="voice-text" class="reader-text" tabindex="0" aria-label="Operator behavior and voice"></article>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
