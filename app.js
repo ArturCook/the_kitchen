@@ -18,6 +18,44 @@ let textReturnFocus = null;
 let voiceButton = null;
 const mobileLayout = window.matchMedia('(max-width: 600px), (max-width: 1000px) and (pointer: coarse)');
 
+// Keep one history entry while inside the app, so browser Back acts like Escape.
+let backEntryActive = false;
+let handlingBrowserBack = false;
+let removingBackEntry = false;
+function navigateBack() {
+  if (!voiceMenu.hidden) closeVoice();
+  else if (!textMenu.hidden) closeText();
+  else if (mainMenu.hidden) returnToMainMenu();
+}
+function syncBackNavigation() {
+  if (handlingBrowserBack || removingBackEntry) return;
+  const insideApp = mainMenu.hidden || !textMenu.hidden;
+  if (insideApp && !backEntryActive) {
+    window.history.pushState({ kitchenBack: true }, '');
+    backEntryActive = true;
+  } else if (!insideApp && backEntryActive) {
+    backEntryActive = false;
+    removingBackEntry = true;
+    window.history.back();
+  }
+}
+window.addEventListener('popstate', () => {
+  if (removingBackEntry) {
+    removingBackEntry = false;
+    syncBackNavigation();
+    return;
+  }
+  if (!backEntryActive) {
+    syncBackNavigation();
+    return;
+  }
+  backEntryActive = false;
+  handlingBrowserBack = true;
+  try { navigateBack(); }
+  finally { handlingBrowserBack = false; }
+  syncBackNavigation();
+});
+
 function resize() {
   document.documentElement.classList.toggle('mobile-layout', mobileLayout.matches);
   if (mobileLayout.matches) {
@@ -421,6 +459,7 @@ function showSelection() {
   selectionMenu.hidden = false;
   textMenu.hidden = true;
   select(selected, true);
+  syncBackNavigation();
 }
 
 function closeText() {
@@ -430,6 +469,7 @@ function closeText() {
   if (textReturnFocus) textReturnFocus.focus({ preventScroll: true });
   else select(selected, true);
   textReturnFocus = null;
+  syncBackNavigation();
 }
 
 function openHelp() {
@@ -472,6 +512,7 @@ function openHelp() {
   selectionMenu.inert = true;
   article.focus({ preventScroll: true });
   textScroll.set(0);
+  syncBackNavigation();
 }
 
 // Render bundled sections as text nodes, preserving wording and indentation.
@@ -611,6 +652,7 @@ function returnToMainMenu() {
   selectionMenu.hidden = true;
   mainMenu.hidden = false;
   document.querySelector('#start').focus();
+  syncBackNavigation();
 }
 document.querySelector('#home').addEventListener('click', returnToMainMenu);
 document.querySelector('#minimize').addEventListener('click', returnToMainMenu);
@@ -659,12 +701,15 @@ document.addEventListener('keydown', event => {
 }, true);
 
 document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    navigateBack();
+    return;
+  }
   if (!voiceMenu.hidden) {
-    if (event.key === 'Escape') { event.preventDefault(); closeVoice(); }
     return;
   }
   if (!textMenu.hidden) {
-    if (event.key === 'Escape') { event.preventDefault(); closeText(); }
     return;
   }
   if (!mainMenu.hidden) {
@@ -678,8 +723,5 @@ document.addEventListener('keydown', event => {
   } else if (event.key === 'Home' || event.key === 'End') {
     event.preventDefault();
     select(event.key === 'Home' ? 0 : operators.length - 1, true);
-  } else if (event.key === 'Escape') {
-    event.preventDefault();
-    document.querySelector('#home').click();
   }
 });

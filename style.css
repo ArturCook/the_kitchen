@@ -144,7 +144,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .mobile-layout #landing-title {
   position: absolute; inset: 0 0 auto; height: 46px; display: flex;
   align-items: center; padding: 0 12px; background: var(--gold);
-  color: #382605; font-size: 16px;
+  color: #382605; font-size: 24px;
 }
 .mobile-layout #main-menu #start {
   left: calc(50% - 130.5px); top: auto; bottom: 24px;
@@ -164,7 +164,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .mobile-layout #selection-menu::after {
   content: 'operators'; position: absolute; inset: 0 0 auto; height: 46px;
   display: flex; align-items: center; padding: 0 56px 0 12px;
-  background: var(--gold); color: #382605; font-size: 16px; pointer-events: none;
+  background: var(--gold); color: #382605; font-size: 24px; pointer-events: none;
 }
 .mobile-layout #window.inverse-mode #selection-menu { background: var(--ink); }
 .mobile-layout #window.inverse-mode #selection-menu::after { content: 'inverse_operators'; }
@@ -209,7 +209,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   background: var(--gold); color: #382605;
 }
 .mobile-layout #text-title, .mobile-layout #voice-title {
-  font-size: 16px; margin: 0; overflow-wrap: anywhere; line-height: 1.1;
+  font-size: 24px; margin: 0; min-width: 0; overflow: hidden;
+  white-space: nowrap; text-overflow: ellipsis; line-height: 1.1;
 }
 .mobile-layout .text-panel .icon-close { margin: 0; }
 .mobile-layout .reader-text {
