@@ -24,7 +24,6 @@ function resize() {
     viewport.style.width = '';
     viewport.style.height = '';
     appWindow.style.transform = '';
-    appWindow.style.setProperty('--title-scale', Math.min(window.innerWidth - 24, window.innerHeight - 24, 512) / 256);
     return;
   }
   const scale = Math.min(window.innerWidth, window.innerHeight) / 256;

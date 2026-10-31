@@ -14,6 +14,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #main-menu, #selection-menu { position: absolute; inset: 0; 
      margin-top: 1px; margin-bottom: 1px;}
 #main-menu { background: url('assets/menu/main_menu.png') center / 256px 256px no-repeat;}
+#landing-title { display: none; }
 #selection-menu { background: url('assets/menu/selection_menu.png') center / 256px 256px no-repeat;}
 #window.inverse-mode #selection-menu { background-image: url('assets/menu/selection_menu.png'); }
 #start { position: absolute; left: 85px; top: 221px; width: 66px; height: 17px; border: 0; padding: 0; background: url('assets/menu/start_button.png'); image-rendering: pixelated; }
@@ -131,21 +132,43 @@ button { font: inherit; color: inherit; cursor: pointer; }
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 .mobile-layout #main-menu {
-  inset: 50% auto auto 50%; width: 256px; height: 256px; margin: 0;
-  transform: translate(-50%, -50%) scale(var(--title-scale));
+  inset: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+  width: auto; height: auto; margin: 0; transform: none;
+  border: 3px solid var(--gold); background: #1c1f28;
 }
-.mobile-layout #main-menu #help::after { content: ''; position: absolute; inset: -7px; }
+.mobile-layout #main-menu::before {
+  content: ''; position: absolute; inset: 46px 0 102px;
+  background: url('assets/menu/main_menu_borderless.png') center / 100% auto no-repeat;
+  image-rendering: pixelated; pointer-events: none;
+}
+.mobile-layout #landing-title {
+  position: absolute; inset: 0 0 auto; height: 46px; display: flex;
+  align-items: center; padding: 0 12px; background: var(--gold);
+  color: #382605; font-size: 16px;
+}
+.mobile-layout #main-menu #start {
+  left: calc(50% - 130.5px); top: auto; bottom: 24px;
+  width: 198px; height: 54px; background-size: 198px 51px;
+  background-position: center; background-repeat: no-repeat; touch-action: manipulation;
+}
+.mobile-layout #main-menu #help {
+  left: calc(50% + 79.5px); top: auto; bottom: 24px;
+  width: 51px; height: 54px; background-size: 51px 51px;
+  background-position: center; touch-action: manipulation;
+}
 .mobile-layout #selection-menu {
   inset: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
   margin: 0; border: 3px solid var(--gold); background: var(--ink);
 }
 .mobile-layout #selection-menu::before { display: none; }
 .mobile-layout #selection-menu::after {
-  content: 'Operators'; position: absolute; top: 15px; left: 12px; color: var(--gold); font-size: 18px;
+  content: 'operators'; position: absolute; inset: 0 0 auto; height: 46px;
+  display: flex; align-items: center; padding: 0 56px 0 12px;
+  background: var(--gold); color: #382605; font-size: 16px; pointer-events: none;
 }
 .mobile-layout #window.inverse-mode #selection-menu { background: var(--ink); }
-.mobile-layout #window.inverse-mode #selection-menu::after { content: 'Inverse operators'; }
-.mobile-layout .window-controls { top: 0; right: 0; gap: 0; }
+.mobile-layout #window.inverse-mode #selection-menu::after { content: 'inverse_operators'; }
+.mobile-layout .window-controls { top: 0; right: 0; gap: 0; z-index: 1; }
 .mobile-layout #minimize, .mobile-layout #maximize { display: none; }
 .mobile-layout .window-control {
   width: 44px; height: 44px; background-size: 15px 15px; touch-action: manipulation;
