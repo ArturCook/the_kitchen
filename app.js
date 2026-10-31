@@ -16,14 +16,24 @@ let inverseState = { selected: 0, scroll: 0 };
 let applyButton = null;
 let textReturnFocus = null;
 let voiceButton = null;
+const mobileLayout = window.matchMedia('(max-width: 600px), (max-width: 1000px) and (pointer: coarse)');
 
 function resize() {
+  document.documentElement.classList.toggle('mobile-layout', mobileLayout.matches);
+  if (mobileLayout.matches) {
+    viewport.style.width = '';
+    viewport.style.height = '';
+    appWindow.style.transform = '';
+    appWindow.style.setProperty('--title-scale', Math.min(window.innerWidth - 24, window.innerHeight - 24, 512) / 256);
+    return;
+  }
   const scale = Math.min(window.innerWidth, window.innerHeight) / 256;
   viewport.style.width = `${256 * scale}px`;
   viewport.style.height = `${256 * scale}px`;
   appWindow.style.transform = `scale(${scale})`;
 }
 window.addEventListener('resize', resize);
+mobileLayout.addEventListener('change', resize);
 resize();
 
 // Move content by whole artwork pixels, independently of browser/device zoom.
@@ -75,7 +85,8 @@ function pixelScroller(viewport, label, onScroll = () => {}) {
   const travel = () => Math.max(0, bar.clientHeight - 16 - 71);
   function set(value) {
     position = Math.max(0, Math.min(maximum(), Math.round(value)));
-    content.style.transform = `translateY(${-position}px)`;
+    content.style.transform = mobileLayout.matches ? '' : `translateY(${-position}px)`;
+    if (mobileLayout.matches) viewport.scrollTop = position;
     thumb.style.top = `${6 + Math.round(maximum() ? position / maximum() * travel() : 0)}px`;
     bar.setAttribute('aria-valuemax', String(maximum()));
     bar.setAttribute('aria-valuenow', String(position));
@@ -83,6 +94,7 @@ function pixelScroller(viewport, label, onScroll = () => {}) {
     onScroll(position, maximum());
   }
   function wheel(event) {
+    if (mobileLayout.matches) return;
     event.preventDefault();
     remainder += event.deltaY * (event.deltaMode === 1 ? 9 : event.deltaMode === 2 ? viewport.clientHeight : 1 / scale());
     const pixels = Math.trunc(remainder);
@@ -124,9 +136,11 @@ function pixelScroller(viewport, label, onScroll = () => {}) {
   bar.addEventListener('blur', stopPress);
   window.addEventListener('blur', stopPress);
   viewport.addEventListener('pointerdown', event => {
+    if (mobileLayout.matches) return;
     if (event.pointerType === 'touch') touch = { y: event.clientY, position, moved: false };
   });
   viewport.addEventListener('pointermove', event => {
+    if (mobileLayout.matches) return;
     if (!touch) return;
     const delta = (touch.y - event.clientY) / scale();
     touch.moved ||= Math.abs(delta) >= 1;
@@ -140,6 +154,17 @@ function pixelScroller(viewport, label, onScroll = () => {}) {
     touch = null;
   }, true);
   viewport.addEventListener('pointercancel', () => { touch = null; });
+  viewport.addEventListener('scroll', () => {
+    if (!mobileLayout.matches) return;
+    position = viewport.scrollTop;
+    onScroll(position, maximum());
+  }, { passive: true });
+  mobileLayout.addEventListener('change', () => {
+    touch = null;
+    stopPress();
+    viewport.scrollTop = 0;
+    set(position);
+  });
   function key(event) {
     if (event.target.tagName === 'BUTTON') return;
     const steps = { ArrowDown: arrowStep, ArrowUp: -arrowStep, PageDown: viewport.clientHeight, PageUp: -viewport.clientHeight };
@@ -156,7 +181,7 @@ function pixelScroller(viewport, label, onScroll = () => {}) {
   return {
     content, set,
     get position() { return position; },
-    get atBottom() { return position === maximum(); },
+    get atBottom() { return Math.abs(position - maximum()) < 1; },
     reveal(element) {
       const top = element.offsetTop;
       const bottom = top + element.offsetHeight;
@@ -168,7 +193,7 @@ function pixelScroller(viewport, label, onScroll = () => {}) {
 const listScroll = pixelScroller(list, 'Scroll operators');
 const textScroll = pixelScroller(article, 'Scroll operator text', (position, maximum) => {
   if (!applyButton) return;
-  const atBottom = position === maximum;
+  const atBottom = Math.abs(position - maximum) < 1;
   applyButton.style.visibility = atBottom ? 'visible' : 'hidden';
   applyButton.disabled = !atBottom;
 });
@@ -340,7 +365,7 @@ function renderCards() {
   filename.textContent = operator.name
   button.append(filename);
   button.addEventListener('click', () => {
-    if (selected === index) openOperator(index);
+    if (mobileLayout.matches || selected === index) openOperator(index);
     else select(index, true);
   });
   cards.append(button);
