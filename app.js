@@ -536,7 +536,7 @@ function openHelp() {
       addHeader(section, "procedure-heading") 
     }
     addText(lines)
-    if (section !== "Design Principles") {
+    if (section !== "Credits") {
       linebreak();
     }
     flush();
