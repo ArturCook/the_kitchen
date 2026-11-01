@@ -5,7 +5,7 @@ window.KITCHEN_HELP = {
   "introduction": [
     "This repository is a list of reusable cognitive operators.",
     "",
-    "They describe real social manouvers. I used all of them extensively. In multiple situations.",
+    "They describe real social maneuvers. I used all of them extensively. In multiple situations.",
     "",
     "Some were designed by me. Some borrowed from other people. Many were found independently from multiple unconnected sources.",
     "",

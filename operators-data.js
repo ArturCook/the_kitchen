@@ -1138,43 +1138,43 @@ window.KITCHEN_OPERATORS = [
         "3. Angle yourself above it."
       ],
       [
-        "5. Force it down. Hard."
+        "4. Force it down. Hard."
       ],
       [
-        "6. They'll fall flat. Suddenly."
+        "5. They'll fall flat. Suddenly."
       ],
       [
-        "7. Don't break its fall."
+        "6. Don't break its fall."
       ],
       [
-        "8. Don't pick it up afterwards."
+        "7. Don't pick it up afterwards."
       ],
       [
-        "9. Don't even look at it."
+        "8. Don't even look at it."
       ],
       [
-        "10. Let them get back to their feet on their own."
+        "9. Let them get back to their feet on their own."
       ],
       [
-        "11. The moment they're about to regain balance, hit again. Full force. Frontally."
+        "10. The moment they're about to regain balance, hit again. Full force. Frontally."
       ],
       [
-        "12. They'll be ejected out."
+        "11. They'll be ejected out."
       ],
       [
-        "13. If they knock other things over in the trajectory and create a mess, let them."
+        "12. If they knock other things over in the trajectory and create a mess, let them."
       ],
       [
-        "14. Don't pay attention."
+        "13. Don't pay attention."
       ],
       [
-        "15. Don't manage the aftermath."
+        "14. Don't manage the aftermath."
       ],
       [
-        "16. Don't check on it."
+        "15. Don't check on it."
       ],
       [
-        "17. Go do something else."
+        "16. Go do something else."
       ]
     ],
     "outputs": [
