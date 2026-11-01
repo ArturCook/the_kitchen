@@ -119,10 +119,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .reader-text .nickname-label { color: #bec5ce; }
 #apply { display: block; width: 66px; height: 18px; padding: 0; border: 0; margin: 8px auto 0; background: url('assets/menu/apply_button.png') no-repeat; image-rendering: pixelated; }
 #apply:hover, #apply:focus-visible { background-image: url('assets/menu/apply_button_hover.png'); outline: none; }
-#apply:active { background-image: url('assets/menu/apply_button_pressed.png'); }
+#apply:active, #apply.touch-pressed { background-image: url('assets/menu/apply_button_pressed.png'); }
 #voice { float: right; position: relative; width: 17px; height: 18px; margin: 0 0 3px 5px; padding: 0; border: 0; background: url('assets/menu/button_voice.png') left top no-repeat; image-rendering: pixelated; }
 #voice:hover, #voice:focus-visible { background-image: url('assets/menu/button_voice_hovered.png'); outline: none; }
-#voice:active { background-image: url('assets/menu/button_voice_pressed.png'); }
+#voice:active, #voice.touch-pressed { background-image: url('assets/menu/button_voice_pressed.png'); }
 
 /* Phones use the same content and artwork, with room to read and swipe. */
 .mobile-layout body { display: block; }

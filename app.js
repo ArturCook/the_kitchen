@@ -18,6 +18,33 @@ let textReturnFocus = null;
 let voiceButton = null;
 const mobileLayout = window.matchMedia('(max-width: 600px), (max-width: 1000px) and (pointer: coarse)');
 
+// Scrollable readers can delay :active on touch. Paint feedback immediately,
+// without preventing native scrolling or changing click-on-release behavior.
+let readerPress = null;
+function clearReaderPress() {
+  readerPress?.button.classList.remove('touch-pressed');
+  readerPress = null;
+}
+document.addEventListener('pointerdown', event => {
+  if (event.pointerType !== 'touch' || !event.isPrimary) return;
+  clearReaderPress();
+  const button = event.target.closest('#voice, #apply');
+  if (!button || button.disabled) return;
+  readerPress = { button, id: event.pointerId, x: event.clientX, y: event.clientY };
+  button.classList.add('touch-pressed');
+}, { passive: true });
+document.addEventListener('pointermove', event => {
+  if (!readerPress || event.pointerId !== readerPress.id) return;
+  if (Math.hypot(event.clientX - readerPress.x, event.clientY - readerPress.y) > 8) clearReaderPress();
+}, { passive: true });
+for (const type of ['pointerup', 'pointercancel']) {
+  document.addEventListener(type, event => {
+    if (event.pointerId === readerPress?.id) clearReaderPress();
+  }, { passive: true });
+}
+window.addEventListener('blur', clearReaderPress);
+window.addEventListener('pagehide', clearReaderPress);
+
 // Keep one history entry while inside the app, so browser Back acts like Escape.
 let backEntryActive = false;
 let handlingBrowserBack = false;

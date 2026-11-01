@@ -895,8 +895,7 @@ window.KITCHEN_OPERATORS = [
       ]
     ],
     "outputs": [
-      "A funny phrase that makes the original framing sound",
-      "dumb and arbitrary."
+      "A funny phrase that makes the original framing sound dumb and arbitrary."
     ],
     "do_not_use": [
       "When you can't do the same with your own framing."
@@ -920,8 +919,7 @@ window.KITCHEN_OPERATORS = [
     "procedure": [
       [
         "1. State the fact",
-        " - Example: \"My toilet has an occasional backflow ",
-        "       that flushes water upwards vigorously.\""
+        " - Example: \"My toilet has an occasional backflow that flushes water upwards vigorously.\""
       ],
       [
         "2. Compress it.",
@@ -951,8 +949,7 @@ window.KITCHEN_OPERATORS = [
         "8. Done. "
       ],
       [
-        "9. Congratulations. You're now the new owner of an",
-        "    explosive toilet."
+        "9. Congratulations. You're now the new owner of an explosive toilet."
       ]
     ],
     "outputs": [
@@ -1024,8 +1021,7 @@ window.KITCHEN_OPERATORS = [
       [
         "1. Take everything professionals say. Throw it away.",
         " - If it made sense we wouldn't be where we're at.",
-        " - If someone is really good, just downgrade it to ",
-        "      'mild suggestion' instead."
+        " - If someone is really good, just downgrade it to 'mild suggestion' instead."
       ],
       [
         "2. Do a fair bit of research on the topic."
@@ -1114,8 +1110,7 @@ window.KITCHEN_OPERATORS = [
       ],
       [
         "4. Assert who it belongs to.",
-        "    Prevents: Ownership transfer by responsibility",
-        "    implication."
+        "    Prevents: Ownership transfer by responsibility implication."
       ],
       [
         "5. Don't engage with it, otherwise.",
@@ -1131,8 +1126,7 @@ window.KITCHEN_OPERATORS = [
         "    Prevents: Ownership transfer by momentum."
       ],
       [
-        "8. If required, make the transfer as expensive for the ",
-        "    person requesting it as you can.",
+        "8. If required, make the transfer as expensive for the person requesting it as you can.",
         "    Prevents: Ownership transfer by learned expectation.",
         "    "
       ]
