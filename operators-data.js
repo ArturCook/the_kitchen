@@ -13,8 +13,7 @@ window.KITCHEN_OPERATORS = [
       "Make the failure mode a first class citizen."
     ],
     "key_idea": [
-      "Every well-defined A creates its own shadow-image.",
-      "That's also a well-defined character in itself."
+      "Every well-defined A creates its own shadow-image. That's also a well-defined character in itself."
     ],
     "procedure": [
       [
@@ -27,12 +26,12 @@ window.KITCHEN_OPERATORS = [
         "3. Assert the opposite was achieved."
       ],
       [
-        "4. Invent a persona that would naturally have this objective.",
+        "4. Invent a persona that would naturally have this as objective.",
         "- Reaction should be 'of course! makes total sense!'",
         "- Not 'kinda...? I guess?'"
       ],
       [
-        "5. Choose a reason it would have for it.",
+        "5. Choose a reason it would have for opposite as objective.",
         "- Not morally justified.",
         "- But still valid."
       ],
@@ -101,8 +100,7 @@ window.KITCHEN_OPERATORS = [
     ],
     "procedure": [
       [
-        "1. Do the bare minimum that would technically be classified",
-        "    as 'something done'."
+        "1. Do the bare minimum that would technically be classified as 'something done'."
       ],
       [
         "2. Rest for the remainder of the day."
@@ -199,8 +197,7 @@ window.KITCHEN_OPERATORS = [
       "To put it on a somewhat stable footing."
     ],
     "key_idea": [
-      "Systems need a little stabilization before getting going.",
-      "That's normal. Provide it if you can."
+      "Systems need a little stabilization before getting going. That's normal. Provide it if you can."
     ],
     "procedure": [
       [
@@ -364,13 +361,13 @@ window.KITCHEN_OPERATORS = [
     ],
     "procedure": [
       [
-        "1. Define your target domain."
+        "1. Define your source and target domain."
       ],
       [
-        "2. Pick your 20 elements in your source domain. "
+        "2. Pick your 20 elements from the source domain. "
       ],
       [
-        "3. Pick 1 element with immediate association.",
+        "3. Pick 1 element with immediate association on the target domain.",
         " - Reaction should be: \"yeah. of course.\"",
         " - If you can't find any, change target domain."
       ],
@@ -383,49 +380,43 @@ window.KITCHEN_OPERATORS = [
         "5. Expand your target domain. A bit."
       ],
       [
-        "6. Pick 2 elements and associate them with elements you",
-        "    added by expanding the domain.",
+        "6. Pick 2 elements and associate them with elements you added by expanding the domain.",
         " - Reaction should be: \"HAHAHA\" as well.",
         " - If you can't find any, try a different expansion."
       ],
       [
-        "7. Pick 1 element and map it to an anti-element. I.e. an",
-        "    element outside of the target group.",
+        "7. Pick 1 element and map it to an anti-element. I.e. an element outside of the target domain.",
         " - Reaction should be: \"HAHAHA. Good one!\"",
         " - If you can't find any, you expanded too much."
       ],
       [
-        "8. Pick 3 elements you have a narrative about. Write it.",
-        "    Any mentions of source group should be replaced.",
+        "8. Pick 3 elements you have a narrative about. Write it as-is. Then replace mentions of source elements for ones in the target domain.",
         " - Reaction should be: \"ohhh yeahhh!\"",
-        " - If you can't, research your target domain more.",
+        " - If you can't, research your source domain more.",
         "",
         " - Example: You're mapping humans into cakes.",
         "       a) Write the narrative as is, about humans.",
         "       b) Change the protagonist to a cake.",
-        "       c) Change other humans to a different type of cake.",
+        "       c) Change any other humans in the story to different types of cakes.",
         "       d) Change human-specific traits to cake traits.",
         "       e) Re-read it to see if it flows well."
   
       ],
       [
-        "9. Pick a controversial element of the target group. Map",
-        "    it to 1 of your remaining source elements.",
+        "9. Pick a controversial element of the target group. Map it to 1 of your remaining source elements.",
         " - Reaction should be: \"oohhh! I seee you... ;)\"",
         " - If you can't find any... go live your life a bit."
       ],
       [
-        "10. Map 9 remaining elements. Don't try to be too funny.",
+        "10. Map 9 remaining elements in a straighforward way. Don't try to be too funny.",
         " - Reaction should be: \"oh! I get it.\"",
-        " - If you can't find any... you're trying too hard. Just get",
-        "      it done mate."
+        " - If you can't find any... you're trying too hard. Just get it done mate."
       ],
       [
         "11. At this point, all 20 elements should be mapped."
       ],
       [
-        "12. Pick an extra element. Map it in a way that speaks",
-        "      to you, personally.",
+        "12. Pick an extra element. Map it in a way that speaks to you, personally.",
         " - Reaction should be... not relevant.",
         " - If you can't find any. Yes. Yes you can."
       ],
@@ -433,8 +424,7 @@ window.KITCHEN_OPERATORS = [
         "13. Done."
       ],
       [
-        "14. Any element outside of those can be inferred by",
-        "      writing in the same vibe."
+        "14. Any element outside of those can be inferred by writing in the same vibe."
       ]
     ],
     "outputs": [
@@ -468,50 +458,47 @@ window.KITCHEN_OPERATORS = [
       [
         "2. Look at each small piece individually.",
         " - If it makes you uncomfortable:",
-        "        Risk: Emotional Damage",
-        "        Action: Cut it.",
+        "   Risk: Emotional Damage",
+        "   Action: Cut it.",
         "\t\t",
         "\t- If someone asks nicely:",
-        "        Risk: Broken Trust",
-        "        Action: Cut it.",
+        "   Risk: Broken Trust",
+        "   Action: Cut it.",
         "\t\t",
         "\t- If it limits your future options:",
-        "        Risk: Opportunity Cost",
-        "        Action: Cut it.\t\t",
+        "   Risk: Opportunity Cost",
+        "   Action: Cut it.\t\t",
         "\t",
         "\t- If you said it elsewhere:",
-        "        Risk: Meaning Dilution",
-        "        Action: Cut it.",
+        "   Risk: Meaning Dilution",
+        "   Action: Cut it.",
         "\t",
         "\t- If it reflects badly on you:",
-        "        Risk: Reputation Damage",
-        "        Action: Share it partially.",
+        "   Risk: Reputation Damage",
+        "   Action: Share it partially.",
         "\t\t",
         "\t- If it can damage what you value:",
-        "        Risk: Collateral Damage",
-        "        Action: Split the message from its context. ",
-        "        Then Share.",
+        "   Risk: Collateral Damage",
+        "   Action: Split the message from its context. Then Share.",
         "\t\t",
         "\t- If it can be misunderstood in a bad way:",
-        "        Risk: Interpretation Risk",
-        "        Action: Prefix it poking fun at the misunderstanding.",
-        "        Then Share both.",
+        "   Risk: Interpretation Risk",
+        "   Action: Prefix it poking fun at the misunderstanding itself. Then Share both.",
         "\t\t",
         "\t- If it's something expected not to be mentioned:",
-        "        Risk: Being Targeted",
-        "        Action: Imply it without saying it.",
+        "   Risk: Being Targeted",
+        "   Action: Imply it without saying it.",
         "\t\t",
         "\t- If you're coerced to hide it",
-        "        Risk: Possible Retaliation",
-        "        Action: Imply you won't share. Hide the minimum ",
-        "        to comply with their ask. Then share the rest.",
+        "   Risk: Possible Retaliation",
+        "   Action: Imply you won't share. Hide the minimum to comply with their ask. Then share the rest.",
         "\t\t\t\t",
         "\t- If an empty space is left:",
-        "        Risk: Narrative Projection",
-        "        Action: Fill it with something mundane and cute.",
+        "   Risk: Narrative Projection",
+        "   Action: Fill it with something mundane and cute.",
         "",
         "\t- By default:",
-        "\        Action: Share it."
+        "\  Action: Share it."
       ]
     ],
     "outputs": [
@@ -534,8 +521,7 @@ window.KITCHEN_OPERATORS = [
       "Not break."
     ],
     "key_idea": [
-      "Whoever put you in that situation isn't acting in good faith. ",
-      "Neither should you."
+      "Whoever put you in that situation isn't acting in good faith. Neither should you."
     ],
     "procedure": [
       [
@@ -594,7 +580,7 @@ window.KITCHEN_OPERATORS = [
       [
         "5. For 80% of estimated time:",
         " - Clean the environment.",
-        " - Set up adjacent tasks you'll need when it completes.",
+        " - Set up adjacent tasks you'll need done when it completes.",
         " - If time remains, do something else."
       ],
       [
@@ -638,8 +624,7 @@ window.KITCHEN_OPERATORS = [
     ],
     "procedure": [
       [
-        "1. Think about what you want to transfer. Be it a feeling, ",
-        "   an idea, or an opinion."
+        "1. Think about what you want to transfer. Be it a feeling, an idea, or an opinion."
       ],
       [
         "2. Imagine yourself sharing it. ",
@@ -654,8 +639,7 @@ window.KITCHEN_OPERATORS = [
         "4. Show up."
       ],
       [
-        "5. Talk about something else entirely. Any mundane issue",
-        "    that makes sense to be talking about."
+        "5. Talk about something else entirely. Any mundane issue you want."
       ],
       [
         "6. End the conversation."
@@ -708,10 +692,10 @@ window.KITCHEN_OPERATORS = [
       ],
       [
         "6. If none remains, then:",
-        " - Ignore the Outputs filter (#5).",
-        " - If none remains, ignore the Purpose filter (#4).",
-        " - If none remains, ignore the Trigger filter (#3).",
-        " - If none remains, ignore the Do Not Use filter (#2)."
+        " - Ignore step 5, Outputs filter.",
+        " - If none remains, ignore step 4, Purpose filter.",
+        " - If none remains, ignore step 3, the Trigger filter.",
+        " - If none remains, ignore step 2, the Do Not Use filter."
       ],
       [
         "7. Choose the first on the remaining list, in alphabetical ordering."
@@ -780,8 +764,7 @@ window.KITCHEN_OPERATORS = [
       "Narrow down the area where a pain point is located."
     ],
     "key_idea": [
-      "Some threads come loose if you pull from the right place.",
-      "Need to find where, though."
+      "Some threads come loose if you pull from the right place. Need to find where, though."
     ],
     "procedure": [
       [
@@ -835,60 +818,50 @@ window.KITCHEN_OPERATORS = [
     "file": "operators/the_occult.md",
     "title": "The Occult",
     "trigger": [
-      "When a judgment of value is embedded in the framing",
-      "itself."
+      "When a judgment of value is embedded in the framing itself."
     ],
     "purpose": [
       "Find a comparable, unrelated framing to expose it."
     ],
     "key_idea": [
-      "Some 'obvious facts' pass as such by being implicit.",
-      "Find a comparison that flips it."
+      "Some 'obvious facts' pass as such because they're hidden in the framing itself. Find a comparison that makes it explicit."
     ],
     "procedure": [
       [
         "1. Accept the framing. A bit.",
-        "\t- Example: Body standards."
+        " - Example: Body standards."
       ],
       [
         "2. Pick an element that the framing can apply to.",
-        "\t- Example: A chubby girl."
+        " - Example: A chubby girl."
       ],
       [
         "3. Apply that framing, to this element.",
-        "\t- Example: \"Oh, guys like skinny girls.\""
+        " - Example: \"Oh, guys like skinny girls.\""
       ],
       [
         "4. Find the correct answer (usually not hard).",
-        "\t- Example: \"Some guys like skinny girls. Some ",
-        "\t      guys like chubby girls. Some guys like both.",
-        "\t      Some guys like guys.\""
+        " - Example: \"Some guys like skinny girls. Some guys like chubby girls. Some guys like both. Some guys like guys.\""
       ],
       [
         "5. Pick an unrelated category you find funny.",
-        "\t- Example: Cakes."
+        " - Example: Cakes."
       ],
       [
-        "6. Pick an element in that category that occupies a",
-        "    somewhat equivalent structural role.",
-        "\t- Example: Calorie-Dense Chocolate Cake."
+        "6. Pick an element in that category that occupies a somewhat equivalent structural role.",
+        " - Example: Calorie-Dense Chocolate Cake."
       ],
       [
         "7. Apply that framing into this second category.",
-        "\t- Example: \"Oh, cake tastes better with fewer",
-        "\t      calories.\""
+        " - Example: \"Oh, cake tastes better with fewer calories.\""
       ],
       [
         "8. Translate the correct answer as well.",
-        "\t- Example: \"Different people like different",
-        "\t      types of cakes.\""
+        " - Example: \"Different people like different types of cakes.\""
       ],
       [
-        "9. Create a phrase that affirms the framed view, and",
-        "    negates the correct answer.",
-        "\t- Example: \"Yeah. Everyone prefers sweet potato",
-        "\t      with broccoli cake. No one in the world likes",
-        "\t      chocolate cake. Legit. I saw on Instagram.\""
+        "9. Create a phrase that affirms the framed view, and negates the correct answer.",
+        " - Example: \"Yeah. Everyone prefers sweet potato with broccoli cake. No one in the world likes chocolate cake. Legit. I saw on Instagram.\""
       ],
       [
         "10. You'll sound very dumb and funny. That's intended."
@@ -1038,7 +1011,7 @@ window.KITCHEN_OPERATORS = [
       ]
     ],
     "outputs": [
-      "An action whose reactions allow classification into two distinct groups."
+      "An action which when causes different people react differently.",
     ],
     "do_not_use": [
       "If you already tried it before and got no results."
@@ -1065,7 +1038,9 @@ window.KITCHEN_OPERATORS = [
         "1. Find the specific word or expression that stood out."
       ],
       [
-        "2. Isolate it from its context, even if it makes sense in it."
+        "2. Isolate it from its context, even if it makes sense there",
+        "- It makes sense in another, different, context.",
+        "- But impossible to tell which from the phrase itself."
       ],
       [
         "3. Keep that pointer for now. That's it."
@@ -1114,8 +1089,7 @@ window.KITCHEN_OPERATORS = [
       ],
       [
         "5. Don't engage with it, otherwise.",
-        "    Prevents: Ownership transfer by continued engagement.",
-        "    "
+        "    Prevents: Ownership transfer by continued engagement."
       ],
       [
         "6. Only accept disagreement with evidence.",
@@ -1158,7 +1132,7 @@ window.KITCHEN_OPERATORS = [
         "1. Identify the obstacle."
       ],
       [
-        "2. Find the point that holds its equilibrium."
+        "2. Find it's center of mass, the point that holds its equilibrium."
       ],
       [
         "3. Angle yourself above it."
@@ -1173,37 +1147,34 @@ window.KITCHEN_OPERATORS = [
         "7. Don't break its fall."
       ],
       [
-        "8. Don't pick it up."
+        "8. Don't pick it up afterwards."
       ],
       [
         "9. Don't even look at it."
       ],
       [
-        "10. Let them regain balance on their own."
+        "10. Let them get back to their feet on their own."
       ],
       [
-        "11. The moment they're about to, hit again."
+        "11. The moment they're about to regain balance, hit again. Full force. Frontally."
       ],
       [
-        "12. Full force. Frontally."
+        "12. They'll be ejected out."
       ],
       [
-        "13. They'll be ejected out."
+        "13. If they knock other things over in the trajectory and create a mess, let them."
       ],
       [
-        "14. If they knock other things in the trajectory, let them."
+        "14. Don't pay attention."
       ],
       [
-        "15. Don't pay attention."
+        "15. Don't manage the aftermath."
       ],
       [
-        "16. Don't manage the aftermath."
+        "16. Don't check on it."
       ],
       [
-        "17. Don't check on it."
-      ],
-      [
-        "18. Go do something else."
+        "17. Go do something else."
       ]
     ],
     "outputs": [

@@ -163,7 +163,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
         "2. Never meet their most immediate need."
       ],
       [
-        "3. Keep solving things on their behalf"
+        "3. Keep solving things on their behalf."
       ],
       [
         "4. Keep them close. Very close."
@@ -307,7 +307,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
         "8. Avoid mentioning your personal issues. "
       ],
       [
-        "9. If you succeed, things will keep going forever..."
+        "9. If you succeed, things will keep going forever ..."
       ]
     ],
     "outputs": [
@@ -421,7 +421,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
         "3. Don't return."
       ],
       [
-        "4. You'll know when it's really over. Maybe..."
+        "4. You'll know when it's really over. Maybe ..."
       ]
     ],
     "outputs": [
@@ -571,7 +571,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
       "Keep it hidden."
     ],
     "key_idea": [
-      "Around and around and around and around..."
+      "Around and around and around and around ..."
     ],
     "procedure": [
       [

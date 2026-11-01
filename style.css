@@ -112,7 +112,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .reader-text ul.behavior-rules { list-style: none; margin: 0 6px 4px; padding: 0 0 0 3ch; }
 .reader-text .behavior-rules li { position: relative; white-space: pre-wrap; margin-bottom: 4px; }
 .reader-text .behavior-rules li::before { content: '-'; position: absolute; left: -3ch; }
-.reader-text p.behavior-voice { margin-bottom: 2px }
+
+.reader-text ul.behavior-voice { list-style: none; margin: 0 6px 4px; padding: 0 0 0 3ch; }
+.reader-text .behavior-voice li { position: relative; white-space: pre-wrap; margin-bottom: 4px; }
+.reader-text .behavior-voice li::before { content: '-'; position: absolute; left: -3ch; }
+
+/* .reader-text p.behavior-voice { margin-bottom: 2px } */
 .reader-text p.behavior-who { margin-bottom: 2px }
 .reader-text p.behavior-who:first { margin-bottom: 4px }
 .reader-text .operator-highlight { color: var(--gold); }

@@ -364,9 +364,16 @@ function openVoice() {
     } else if(section.heading == "Voice") {
       addHeader(section.heading, "voice-heading") 
       
+      const voices = document.createElement('ul');
+      voices.className = 'behavior-voice';
       for (const line of section.lines) {
-        addLine(line, 'behavior-voice')
+        const voice = document.createElement('li');
+        voice.textContent = line.replace(/^\s*-\s+/, '').replace(/\t/g, '  ');
+        voices.append(voice);
+        // voiceScroll.content.append(rules);
+        // addLine(line, 'behavior-voice')
       }
+      voiceScroll.content.append(voices);
       flush(true)
     }
     if(section.heading !== "Voice") {
@@ -574,7 +581,7 @@ function renderSections(operator) {
       if (!line.trim()) flush();
       else paragraph.push(line
         .replace(/\t/g, '  ')
-        .replace(/- /g, '   - ')
+        .replace(/- /g, '  - ')
       );
     }
     flush(withSpacing);
