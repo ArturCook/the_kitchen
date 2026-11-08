@@ -28,7 +28,7 @@ function clearReaderPress() {
 document.addEventListener('pointerdown', event => {
   if (event.pointerType !== 'touch' || !event.isPrimary) return;
   clearReaderPress();
-  const button = event.target.closest('#voice, #apply');
+  const button = event.target.closest('#voice, #key, #apply');
   if (!button || button.disabled) return;
   readerPress = { button, id: event.pointerId, x: event.clientX, y: event.clientY };
   button.classList.add('touch-pressed');
@@ -313,9 +313,50 @@ function textRenderer(content) {
   return { addHeader, addText, linebreak, flush, addLine };
 }
 
+// Keys share the voice reader so scrolling, focus, Back, and Escape stay equivalent.
+function openKey() {
+  if (!inverseMode || textMenu.hidden || !voiceButton) return;
+  const operator = operators[selected];
+  const key = window.KITCHEN_KEYS.find(entry => entry.id === operator.id);
+  document.querySelector('#voice-title').textContent = `${operator.id}.key.md`;
+  voiceArticle.setAttribute('aria-label', 'Inverse operator key');
+  voiceScroll.content.replaceChildren();
+  const name = document.createElement('p');
+  name.className = 'key-name';
+  const label = document.createElement('span');
+  label.className = 'nickname-label';
+  label.textContent = 'Example: ';
+  const value = document.createElement('span');
+  value.className = 'operator-highlight';
+  value.textContent = key.name;
+  name.append(label, value);
+  voiceScroll.content.append(name);
+  const divider = document.createElement('p');
+  divider.className = 'end-section';
+  voiceScroll.content.append(divider);
+  const lines = document.createElement('ul');
+  lines.className = 'key-lines';
+  for (const text of key.lines) {
+    const line = document.createElement('li');
+    const end = text.indexOf(']') + 1;
+    const prefix = document.createElement('span');
+    prefix.className = 'key-label';
+    prefix.textContent = text.slice(0, end);
+    line.append(prefix, document.createTextNode(text.slice(end)));
+    lines.append(line);
+  }
+  voiceScroll.content.append(lines);
+  voiceMenu.hidden = false;
+  textMenu.inert = true;
+  textMenu.setAttribute('aria-modal', 'false');
+  voiceArticle.focus({ preventScroll: true });
+  voiceScroll.set(0);
+}
+
 function openVoice() {
   if (inverseMode || textMenu.hidden || !voiceButton) return;
   const operator = operators[selected];
+  voiceArticle.setAttribute('aria-label', 'Operator behavior and voice');
   const behavior = window.KITCHEN_BEHAVIORS.find(entry => entry.id === operator.id);
   document.querySelector('#voice-title').textContent = `${operator.id}.behavior.md`;
   voiceScroll.content.replaceChildren();
@@ -554,13 +595,13 @@ function renderSections(operator) {
   applyButton = null;
   voiceButton = null;
   textScroll.content.replaceChildren();
-  if (!inverseMode && !operator.original_id) {
+  {
     voiceButton = document.createElement('button');
-    voiceButton.id = 'voice';
+    voiceButton.id = inverseMode ? 'key' : 'voice';
     voiceButton.type = 'button';
-    voiceButton.setAttribute('aria-label', `Read behavior and voice for ${operator.name}`);
-    voiceButton.addEventListener('click', openVoice);
-    textScroll.content.append(voiceButton);
+    voiceButton.setAttribute('aria-label', `Read ${inverseMode ? 'key' : 'behavior and voice'} for ${operator.name}`);
+    voiceButton.addEventListener('click', inverseMode ? openKey : openVoice);
+    if (!inverseMode) textScroll.content.append(voiceButton);
   }
   let paragraph = [];
   function flush() {
@@ -618,6 +659,7 @@ function renderSections(operator) {
       [`\`${operator.original_id}.md\``, 'operator-highlight'],
       [' operator.'],
     ]);
+    textScroll.content.append(voiceButton);
     addIntro([
       ['Nickname: ', 'nickname-label'],
       [operator.title, 'operator-highlight'],

@@ -89,7 +89,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 
 .text-panel { position: absolute; left: 4px; top: 19px; width: 239px; height: 232px; background: url('assets/menu/text_menu.png') no-repeat; }
-#window.inverse-mode #text-menu { background-image: url('assets/menu/text_menu_inverse.png'); }
+#window.inverse-mode #text-menu, #window.inverse-mode #voice-menu { background-image: url('assets/menu/text_menu_inverse.png'); }
 .text-panel header { position: absolute; left: 4px; top: 2px; right: 3px; height: 9px; display: flex; align-items: start; justify-content: space-between; color: #382605; }
 #text-title, #voice-title { font-size: 8px; margin-left: 4px; }
 #close-text { margin-top: 1px }
@@ -128,6 +128,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
 #voice { float: right; position: relative; width: 17px; height: 18px; margin: 0 0 3px 5px; padding: 0; border: 0; background: url('assets/menu/button_voice.png') left top no-repeat; image-rendering: pixelated; }
 #voice:hover, #voice:focus-visible { background-image: url('assets/menu/button_voice_hovered.png'); outline: none; }
 #voice:active, #voice.touch-pressed { background-image: url('assets/menu/button_voice_pressed.png'); }
+
+#key { float: right; position: relative; width: 17px; height: 18px; margin: 0 0 3px 5px; padding: 0; border: 0; background: url('assets/menu/button_key.png') left -1px no-repeat; image-rendering: pixelated; }
+#key:hover, #key:focus-visible { background-position: left top; background-image: url('assets/menu/button_key_hovered.png'); outline: none; }
+#key:active, #key.touch-pressed { background-position: left top; background-image: url('assets/menu/button_key_pressed.png'); }
 
 /* Phones use the same content and artwork, with room to read and swipe. */
 .mobile-layout body { display: block; }
@@ -208,7 +212,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   inset: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
   width: auto; height: auto; border: 3px solid var(--gold); background: var(--ink); box-shadow: none;
 }
-.mobile-layout #window.inverse-mode #text-menu { background: var(--ink); }
+.mobile-layout #window.inverse-mode #text-menu,
+.mobile-layout #window.inverse-mode #voice-menu { background: #321720; }
 .mobile-layout .text-panel header {
   inset: 0 0 auto; height: 46px; align-items: center; padding-left: 12px;
   background: var(--gold); color: #382605;
@@ -230,7 +235,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .mobile-layout .reader-text p.end-section { margin: 18px 0; }
 .mobile-layout .reader-text ul.behavior-rules { margin: 0 8px 16px; }
 .mobile-layout .reader-text .behavior-rules li { margin-bottom: 10px; }
-.mobile-layout #voice {
+.mobile-layout #voice, .mobile-layout #key {
   width: 44px; height: 44px; background-size: 34px 36px; background-position: center;
   margin: 0 0 8px 8px; touch-action: manipulation;
 }
@@ -238,3 +243,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
   width: 132px; height: 44px; background-size: 132px 36px; background-position: center;
   margin: 20px auto 0; touch-action: manipulation;
 }
+
+.reader-text ul.key-lines { list-style: none; margin: 0 6px 4px; padding: 0; }
+.reader-text .key-lines li { margin-bottom: 4px; white-space: pre-wrap; }
+.reader-text .key-label { color: rgb(190 197 206 / 5%); }
+.reader-text p.key-name { margin-left: 6px; }
+.mobile-layout .reader-text p.key-name, .mobile-layout .reader-text ul.key-lines { margin-left: 8px; }
+/* The idle key glyph sits one artwork pixel lower in its source image. */
+.mobile-layout #key { background-size: 28px 28px; background-position: center calc(50% - 2px); }
+.mobile-layout #key:hover, .mobile-layout #key:focus-visible,
+.mobile-layout #key:active, .mobile-layout #key.touch-pressed { background-position: center; }
