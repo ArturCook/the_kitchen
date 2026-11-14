@@ -51,7 +51,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
     "outputs": [
       "An inverse operator.\t",
       "With either:",
-      "\t- Embedded Morality.",
+      "\t- Embedded morality.",
       "\t- Only Side-effects.",
       "\t- Too expensive."
     ],
@@ -63,7 +63,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_null",
-    "name": "The Treadmill",
+    "name": "Cindy",
     "icon": "assets/icons/inverse_null.png",
     "file": "examples/futaba/inverse_null.md",
     "title": "The Treadmill",
@@ -95,7 +95,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_okinawa",
-    "name": "The Terror",
+    "name": "Stella",
     "icon": "assets/icons/inverse_okinawa.png",
     "file": "examples/futaba/inverse_okinawa.md",
     "title": "The Terror",
@@ -142,7 +142,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_brawler",
-    "name": "The Clutch",
+    "name": "Mona",
     "icon": "assets/icons/inverse_brawler.png",
     "file": "examples/futaba/inverse_brawler.md",
     "title": "The Clutch",
@@ -180,7 +180,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_colonel",
-    "name": "The Competitor",
+    "name": "Alex",
     "icon": "assets/icons/inverse_colonel.png",
     "file": "examples/futaba/inverse_colonel.md",
     "title": "The Competitor",
@@ -224,7 +224,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_driver",
-    "name": "The Kraken",
+    "name": "Sander",
     "icon": "assets/icons/inverse_driver.png",
     "file": "examples/futaba/inverse_driver.md",
     "title": "The Kraken",
@@ -232,7 +232,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
       "You want to keep someone trapped."
     ],
     "purpose": [
-      "Create Predatory Dynamics."
+      "Create predatory dynamics."
     ],
     "key_idea": [
       "Gotta close the exits."
@@ -268,7 +268,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_duck",
-    "name": "The Cock Blocker",
+    "name": "Average Brazilian",
     "icon": "assets/icons/inverse_duck.png",
     "file": "examples/futaba/inverse_duck.md",
     "title": "The Cock Blocker",
@@ -321,7 +321,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_editor",
-    "name": "The Fog of War",
+    "name": "Miss Vũ",
     "icon": "assets/icons/inverse_editor.png",
     "file": "examples/futaba/inverse_editor.md",
     "title": "The Fog of War",
@@ -359,7 +359,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_hand",
-    "name": "The Nutcracker",
+    "name": "Mr. Cook",
     "icon": "assets/icons/inverse_hand.png",
     "file": "examples/futaba/inverse_hand.md",
     "title": "The Nutcracker",
@@ -397,7 +397,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_hermit",
-    "name": "The Ghost",
+    "name": "MJ",
     "icon": "assets/icons/inverse_hermit.png",
     "file": "examples/futaba/inverse_hermit.md",
     "title": "The Ghost",
@@ -436,7 +436,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_lawyer",
-    "name": "The Customs Officer",
+    "name": "AI Fearmongers",
     "icon": "assets/icons/inverse_lawyer.png",
     "file": "examples/futaba/inverse_lawyer.md",
     "title": "The Customs Officer",
@@ -472,7 +472,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_magician",
-    "name": "The Saboteur",
+    "name": "Clayton",
     "icon": "assets/icons/inverse_magician.png",
     "file": "examples/futaba/inverse_magician.md",
     "title": "The Saboteur",
@@ -519,7 +519,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_monkey",
-    "name": "The Status Quo",
+    "name": "Your parents",
     "icon": "assets/icons/inverse_monkey.png",
     "file": "examples/futaba/inverse_monkey.md",
     "title": "The Status Quo",
@@ -560,7 +560,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_needle",
-    "name": "The Maze",
+    "name": "Anthony",
     "icon": "assets/icons/inverse_needle.png",
     "file": "examples/futaba/inverse_needle.md",
     "title": "The Maze",
@@ -605,7 +605,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_occult",
-    "name": "The Con Artist",
+    "name": "Jennifer",
     "icon": "assets/icons/inverse_occult.png",
     "file": "examples/futaba/inverse_occult.md",
     "title": "The Con Artist",
@@ -643,7 +643,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_partypooper",
-    "name": "The Decoy",
+    "name": "Jun",
     "icon": "assets/icons/inverse_partypooper.png",
     "file": "examples/futaba/inverse_partypooper.md",
     "title": "The Decoy",
@@ -677,7 +677,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
       ]
     ],
     "outputs": [
-      "The important things gets misattributed."
+      "The important things get misattributed."
     ],
     "do_not_use": [
       "On effort that can be used elsewhere."
@@ -687,7 +687,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_pilot",
-    "name": "The Pied Piper",
+    "name": "Yuki",
     "icon": "assets/icons/inverse_pilot.png",
     "file": "examples/futaba/inverse_pilot.md",
     "title": "The Pied Piper",
@@ -728,7 +728,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_sharpshooter",
-    "name": "The Moderator",
+    "name": "Sneaky",
     "icon": "assets/icons/inverse_sharpshooter.png",
     "file": "examples/futaba/inverse_sharpshooter.md",
     "title": "The Moderator",
@@ -746,7 +746,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
         "1. Appeal to well-defined guidelines."
       ],
       [
-        "2. Tag add-hoc research as off-topic."
+        "2. Tag ad hoc researches as off-topic."
       ],
       [
         "3. In case anything tricky appears:",
@@ -755,7 +755,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
       ]
     ],
     "outputs": [
-      "A cutoff line remained diffuse."
+      "The cutoff line remained diffuse."
     ],
     "do_not_use": [
       "If they already tried before and got results."
@@ -765,7 +765,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_sniffer",
-    "name": "The Lure",
+    "name": "John",
     "icon": "assets/icons/inverse_sniffer.png",
     "file": "examples/futaba/inverse_sniffer.md",
     "title": "The Lure",
@@ -801,7 +801,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_sword",
-    "name": "The Cuckoo",
+    "name": "Miss S.",
     "icon": "assets/icons/inverse_sword.png",
     "file": "examples/futaba/inverse_sword.md",
     "title": "The Cuckoo",
@@ -851,7 +851,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_titan",
-    "name": "The Wall",
+    "name": "David",
     "icon": "assets/icons/inverse_titan.png",
     "file": "examples/futaba/inverse_titan.md",
     "title": "The Wall",

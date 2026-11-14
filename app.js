@@ -28,7 +28,7 @@ function clearReaderPress() {
 document.addEventListener('pointerdown', event => {
   if (event.pointerType !== 'touch' || !event.isPrimary) return;
   clearReaderPress();
-  const button = event.target.closest('#voice, #key, #apply');
+  const button = event.target.closest('#voice, #key, #apply, #export');
   if (!button || button.disabled) return;
   readerPress = { button, id: event.pointerId, x: event.clientX, y: event.clientY };
   button.classList.add('touch-pressed');
@@ -324,11 +324,11 @@ function openKey() {
   const name = document.createElement('p');
   name.className = 'key-name';
   const label = document.createElement('span');
-  label.className = 'nickname-label';
-  label.textContent = 'Example: ';
+  label.className = 'operator-highlight' ;
+  label.textContent = `${operator.title}`;
   const value = document.createElement('span');
-  value.className = 'operator-highlight';
-  value.textContent = key.name;
+  value.className = 'nickname-label';
+  value.textContent = ' operator loop.';
   name.append(label, value);
   voiceScroll.content.append(name);
   const divider = document.createElement('p');
@@ -689,14 +689,15 @@ function renderSections(operator) {
   addHeader("Do Not Use")
   addText(operator.do_not_use)
 
-  if (!inverseMode && operator.id === 'futaba') {
+  if (!inverseMode && ['futaba', 'the_duck'].includes(operator.id)) {
+    const exporting = operator.id === 'the_duck';
     applyButton = document.createElement('button');
-    applyButton.id = 'apply';
+    applyButton.id = exporting ? 'export' : 'apply';
     applyButton.type = 'button';
-    applyButton.setAttribute('aria-label', 'Apply Futaba: choose an inverse operator');
+    applyButton.setAttribute('aria-label', exporting ? 'Export the entire app as Markdown' : 'Apply Futaba: choose an inverse operator');
     applyButton.style.visibility = 'hidden';
     applyButton.disabled = true;
-    applyButton.addEventListener('click', showInverseSelection);
+    applyButton.addEventListener('click', exporting ? exportKitchen : showInverseSelection);
     textScroll.content.append(applyButton);
   }
 
