@@ -34,8 +34,17 @@ window.KITCHEN_HELP = {
     " - Use the secondary operator only when it informs the current step of the primary operator.",
     " - Keep track of which were used at each step.",
     " - Overlapping outputs are significantly harder to interpret.",
+	"",
   ],
-
+  "Warning": [
+    "",
+    "You're welcome to apply anything described here. In any context you see fit.",
+	"",
+	"Using them is at your own risk.",
+	"",
+	"So is not using. Same risk. So you do you.",
+	""
+  ],
   "Design Principles": [
     "Operators are intentionally small and independent.",
     "",
@@ -56,9 +65,12 @@ window.KITCHEN_HELP = {
     "",
     "Pixel art done by me as well.",
     "",
-    "All based on people I know personally. (and Futaba from Persona 5).",
+    "The pixel art is based on people I know personally (and Futaba from Persona 5). Their names or nicknames are mentioned in the respective operators.",
     "",
     "The operator behavior section is a bit inspired by their actual voices. No copyright infringement intended.",
-    ""
+    "",
+	"All other names mentioned are generic stand-ins for patterns I observed at large. In multiple people out there.",
+    "",
+	"That's it. Have a nice day. Cheers!"
   ]
 };

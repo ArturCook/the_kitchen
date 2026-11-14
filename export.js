@@ -67,8 +67,8 @@ function kitchenMarkdown() {
     const key = window.KITCHEN_KEYS.find(entry => entry.id === operator.id);
     add('---');
     add('### Fear');
-    // Escape bracket labels so Markdown always displays them as literal text.
-    add(key.lines.map(line => line.replace(/^\[/, '\\[').replace(']', '\\]')).join('\n\n'));
+    // Style the prompt labels separately from their answers.
+    add(key.lines.map(line => line.replace(/^\[([^\]]+)\]/, '*$1...*')).join('\n\n'));
   }
   return blocks.join('\n\n').trim() + '\n';
 }
