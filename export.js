@@ -66,8 +66,7 @@ function kitchenMarkdown() {
     operatorText(operator);
     const key = window.KITCHEN_KEYS.find(entry => entry.id === operator.id);
     add('---');
-    add('### Example');
-    add(`Name: ${key.name}`);
+    add('### Fear');
     // Escape bracket labels so Markdown always displays them as literal text.
     add(key.lines.map(line => line.replace(/^\[/, '\\[').replace(']', '\\]')).join('\n\n'));
   }
