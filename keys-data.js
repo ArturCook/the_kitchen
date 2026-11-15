@@ -31,8 +31,8 @@ window.KITCHEN_KEYS = [
   {
     "id": "inverse_okinawa",
     "lines": [
-		"[I Fear] Changes.",
-		"[I don't know I fear] Changes,",
+		"[I Fear] Being hurt.",
+		"[I don't know I fear] Being hurt,",
 		"[So I assume] I have no weaknesses.",
 		"[When someone] Is vulnerable,",
 		"[I assume] They are below me.",
@@ -250,7 +250,7 @@ window.KITCHEN_KEYS = [
 		"[To feel that] They're overstepping,",
 		"[I suppress] My biases",
 		"[So I feel] Impartial",
-		"[And] Can we move on? This place is for nice vibes ^^."
+		"[And] Can we move on, please? We have no proofs."
     ]
   },
   {

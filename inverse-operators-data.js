@@ -95,7 +95,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_okinawa",
-    "name": "Stella",
+    "name": "Okinawa",
     "icon": "assets/icons/inverse_okinawa.png",
     "file": "examples/futaba/inverse_okinawa.md",
     "title": "The Terror",
@@ -142,7 +142,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_brawler",
-    "name": "Mona",
+    "name": "Sander",
     "icon": "assets/icons/inverse_brawler.png",
     "file": "examples/futaba/inverse_brawler.md",
     "title": "The Clutch",
@@ -224,7 +224,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_driver",
-    "name": "Sander",
+    "name": "Miss Vũ",
     "icon": "assets/icons/inverse_driver.png",
     "file": "examples/futaba/inverse_driver.md",
     "title": "The Kraken",
@@ -321,7 +321,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_editor",
-    "name": "Miss Vũ",
+    "name": "Stella",
     "icon": "assets/icons/inverse_editor.png",
     "file": "examples/futaba/inverse_editor.md",
     "title": "The Fog of War",
