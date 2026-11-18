@@ -3,8 +3,8 @@ window.KITCHEN_KEYS = [
   {
     "id": "inverse_futaba",
     "lines": [
-		"[I Fear] Intimacy.",
-		"[I don't know I fear] Intimacy,",
+		"[I Fear] Being ugly.",
+		"[I don't know I fear] Being ugly,",
 		"[So I assume] Nobody wants me.",
 		"[When someone] Teases me,",
 		"[I assume] They're just messing with me.",
@@ -17,15 +17,15 @@ window.KITCHEN_KEYS = [
   {
     "id": "inverse_null",
     "lines": [
-		"[I Fear] Being obsolete.",
-		"[I don't know I fear] Being obsolete,",
-		"[So I assume] I can't waste time.",
-		"[When someone] Tells me to rest a bit,",
+		"[I Fear] Being behind in life.",
+		"[I don't know I fear] Being behind in life,",
+		"[So I assume] I can't afford to start over.",
+		"[When someone] Tells me to take it easy,",
 		"[I assume] I can't.",
 		"[To feel that] I can't,",
 		"[I suppress] My limits",
 		"[So I feel] Rushed",
-		"[And] Overwork myself to death."
+		"[And] Keep at it. Gotta make it work. Somehow..."
     ]
   },
   {
@@ -89,8 +89,8 @@ window.KITCHEN_KEYS = [
     "lines": [
 		"[I Fear] My own desires.",
 		"[I don't know I fear] My own desires,",
-		"[So I assume] Everything must be sanitized.",
-		"[When someone] Expresses themselves freely,",
+		"[So I assume] Everything is straight.",
+		"[When someone] Associates another way,",
 		"[I assume] They must be discredited.",
 		"[To feel that] They must be discredited,",
 		"[I suppress] Their humour",
@@ -188,12 +188,12 @@ window.KITCHEN_KEYS = [
 		"[I Fear] Accountability.",
 		"[I don't know I fear] Accountability,",
 		"[So I assume] I'm never at fault.",
-		"[When someone] Points at my mistakes,",
+		"[When someone] Points at an issue of mine,",
 		"[I assume] They're being unfair to me.",
 		"[To feel that] They're being unfair to me,",
 		"[I suppress] Guilt",
 		"[So I feel] Wronged",
-		"[And] Look, I can explain, ok? It wasn't my fault, it was the_sniffer who..."
+		"[And] Hmmm? Is that supposed to be my problem?"
     ]
   },
   {
@@ -202,7 +202,7 @@ window.KITCHEN_KEYS = [
 		"[I Fear] People being different.",
 		"[I don't know I fear] People being different,",
 		"[So I assume] People need to be kept in line.",
-		"[When someone] Associates freely,",
+		"[When someone] Acts outside their designated script,",
 		"[I assume] They don't know their place.",
 		"[To feel that] They don't know their place,",
 		"[I suppress] My ignorance",
@@ -213,15 +213,15 @@ window.KITCHEN_KEYS = [
   {
     "id": "inverse_partypooper",
     "lines": [
-		"[I Fear] Being full of shit.",
-		"[I don't know I fear] Being full of shit,",
-		"[So I assume] Everything has value.",
-		"[When someone] Makes a cut,",
-		"[I assume] They're being wasteful.",
-		"[To feel that] They're being wasteful,",
-		"[I suppress] My disgust",
-		"[So I feel] Excited",
-		"[And] Well I'm sure we can find a place in there. Just move the second fridge to the bathroom."
+		"[I Fear] Compromise.",
+		"[I don't know I fear] Compromise,",
+		"[So I assume] I don't need to accomodate.",
+		"[When someone] Pressures me,",
+		"[I assume] They are full of shit.",
+		"[To feel that] They are full of shit,",
+		"[I suppress] My higiene",
+		"[So I feel] Disgusting",
+		"[And] Poop in the shower. Why not?"
     ]
   },
   {
@@ -234,7 +234,7 @@ window.KITCHEN_KEYS = [
 		"[When someone] Sticks to their position,",
 		"[I assume] I can sway them from it.",
 		"[To feel that] I can sway them from it,",
-		"[I suppress] My well-being",
+		"[I suppress] My comfort",
 		"[So I feel] Needy",
 		"[And] Make them come help this poor, lonely boy. =("
     ]
@@ -250,7 +250,7 @@ window.KITCHEN_KEYS = [
 		"[To feel that] They're overstepping,",
 		"[I suppress] My biases",
 		"[So I feel] Impartial",
-		"[And] Can we move on, please? We have no proofs."
+		"[And] Can we move on, please? This is a place only for good vibes ^^."
     ]
   },
   {

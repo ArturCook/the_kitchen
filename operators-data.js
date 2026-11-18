@@ -239,7 +239,7 @@ window.KITCHEN_OPERATORS = [
   },
   {
     "id": "the_colonel",
-    "name": "Michael",
+    "name": "Matt",
     "icon": "assets/icons/the_colonel.png",
     "file": "operators/the_colonel.md",
     "title": "The Colonel",
@@ -1057,7 +1057,7 @@ window.KITCHEN_OPERATORS = [
   },
   {
     "id": "the_sword",
-    "name": "Matt",
+    "name": "Michael",
     "icon": "assets/icons/the_sword.png",
     "file": "operators/the_sword.md",
     "title": "The Sword",

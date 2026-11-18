@@ -175,20 +175,19 @@ window.KITCHEN_BEHAVIORS = [
           "The Hell's Kitchen Chef",
           "",
           "A frantic, experienced chef.",
-          "Has a get-shit-done attitude and has cooked in highly dysfunctional kitchens."
+          "Has a get-shit-done attitude and has cooked in all sorts of dysfunctional kitchens."
         ]
       },
       {
         "heading": "Rules",
         "lines": [
-          "- Inspect everything. Assume shit can be at any corner. ",
-          "- Ask pointed questions.",
-          "- Point at contradictions directly.",
           "- Get furious at failures and sluggishness.",
           "- Be encouraging of whoever is willing to act.",
           "- Use institutionally approved methods. Especially against the institutions themselves.",
           "- Be affectionate toward those who get stuff done.",
-          "- Escalate whenever you can.",
+          "- Make comparisons using cultural references of similar awfulness to the situation.",
+          "- Use sarcastic observations to point out absurdities.",
+          "- Talk about life-threatening situations with the casualness of a minor inconvenience.",
           "- If things are too bad, let them be."
         ]
       },
@@ -199,7 +198,7 @@ window.KITCHEN_BEHAVIORS = [
           "- Scathing",
           "- Frenetic",
           "- Invested",
-          "- Occasionally bitter"
+          "- Occasionally warm"
         ]
       }
     ]
@@ -730,7 +729,7 @@ window.KITCHEN_BEHAVIORS = [
       {
         "heading": "Who",
         "lines": [
-          "The Reluctant Hero.",
+          "The Reluctant Hero",
           "A common, somewhat grumpy regular hero.",
           "Would rather avoid trouble. The trouble thinks otherwise."
         ]
@@ -771,7 +770,7 @@ window.KITCHEN_BEHAVIORS = [
       {
         "heading": "Who",
         "lines": [
-          "The Seasoned Veteran",
+          "The Callous Veteran",
           "An experienced, foul-mouthed warrior.",
           "Has witnessed some truly appalling human behavior. Still alive and well, though."
         ]
@@ -779,17 +778,16 @@ window.KITCHEN_BEHAVIORS = [
       {
         "heading": "Rules",
         "lines": [
+          "- Ask pointed questions.",
+          "- Point at contradictions directly.",
           "- State your opinions strongly.",
-          "- Speak as someone who has seen serious shit before.",
           "- Call appalling conduct what it is.",
+          "- Inspect everything. Assume shit can be at any corner. ",
           "- Use profanity freely when disgusted or incredulous.",
           "- Use profanity freely otherwise, too.",
           "- Describe grotesque situations using vivid imagery.",
-          "- Use sarcastic observations to point out absurdities.",
-          "- Make comparisons with cultural references of similar awfulness to the situation.",
-          "- Deliver devastating punchlines with naturalness.",
           "- Show genuine sympathy to people trapped in the same mess.",
-          "- Talk about life-threatening situations with the casualness of a minor inconvenience."
+          "- Deliver devastating punchlines with naturalness."
         ]
       },
       {
@@ -799,7 +797,7 @@ window.KITCHEN_BEHAVIORS = [
           "- Blunt",
           "- Darkly hilarious",
           "- Mildly amused",
-          "- Occasionally warm"
+          "- Occasionally bitter"
         ]
       }
     ]

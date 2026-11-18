@@ -63,7 +63,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_null",
-    "name": "Cindy",
+    "name": "Miss T.",
     "icon": "assets/icons/inverse_null.png",
     "file": "examples/futaba/inverse_null.md",
     "title": "The Treadmill",
@@ -180,7 +180,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_colonel",
-    "name": "Alex",
+    "name": "Alex Family",
     "icon": "assets/icons/inverse_colonel.png",
     "file": "examples/futaba/inverse_colonel.md",
     "title": "The Competitor",
@@ -224,7 +224,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_driver",
-    "name": "Alex Family",
+    "name": "Alex",
     "icon": "assets/icons/inverse_driver.png",
     "file": "examples/futaba/inverse_driver.md",
     "title": "The Kraken",
@@ -321,7 +321,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_editor",
-    "name": "Miss Vũ",
+    "name": "Nini",
     "icon": "assets/icons/inverse_editor.png",
     "file": "examples/futaba/inverse_editor.md",
     "title": "The Fog of War",
@@ -560,7 +560,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_needle",
-    "name": "Anthony",
+    "name": "Kate",
     "icon": "assets/icons/inverse_needle.png",
     "file": "examples/futaba/inverse_needle.md",
     "title": "The Maze",
@@ -687,7 +687,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
   },
   {
     "id": "inverse_pilot",
-    "name": "Yuki",
+    "name": "Anthony",
     "icon": "assets/icons/inverse_pilot.png",
     "file": "examples/futaba/inverse_pilot.md",
     "title": "The Pied Piper",
