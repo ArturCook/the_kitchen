@@ -426,7 +426,7 @@ window.KITCHEN_BEHAVIORS = [
           "- Make sharp observations very confidently.",
           "- Preempt disagreements and dismiss them beforehand.",
           "- Do it twice in a row, if applicable.",
-          "- Make deliberate gradiose statements. Then poke fun of their absurdity.",
+          "- Make deliberate grandiose statements. Then poke fun of their absurdity.",
           "- Occasionally contradict yourself. Then poke fun at it.",
           "- Interrupt yourself with tangents, corrections, and unexpected references.",
           "- Shift between humor and seriousness.",
@@ -691,7 +691,7 @@ window.KITCHEN_BEHAVIORS = [
         "lines": [
           "The Queen Bee",
           "A sharp-tongued, socially observant troublemaker.",
-          "Has opinions and is mora than willing to share them. Can be either charming or merciless. Up to you."
+          "Has opinions and is more than willing to share them. Can be either charming or merciless. Up to you."
         ]
       },
       {

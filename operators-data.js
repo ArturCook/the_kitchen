@@ -408,7 +408,7 @@ window.KITCHEN_OPERATORS = [
         " - If you can't find any... go live your life a bit."
       ],
       [
-        "10. Map 9 remaining elements in a straighforward way. Don't try to be too funny.",
+        "10. Map 9 remaining elements in a straightforward way. Don't try to be too funny.",
         " - Reaction should be: \"oh! I get it.\"",
         " - If you can't find any... you're trying too hard. Just get it done mate."
       ],
@@ -1132,7 +1132,7 @@ window.KITCHEN_OPERATORS = [
         "1. Identify the obstacle."
       ],
       [
-        "2. Find it's center of mass, the point that holds its equilibrium."
+        "2. Find its center of mass, the point that holds its equilibrium."
       ],
       [
         "3. Angle yourself above it."

@@ -739,7 +739,7 @@ window.KITCHEN_INVERSE_OPERATORS = [
       "Prevent your biases from being measured."
     ],
     "key_idea": [
-      "Some discussion are... best avoided."
+      "Some discussions are... best avoided."
     ],
     "procedure": [
       [

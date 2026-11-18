@@ -5,8 +5,8 @@ window.KITCHEN_KEYS = [
     "lines": [
 		"[I Fear] Being ugly.",
 		"[I don't know I fear] Being ugly,",
-		"[So I assume] Nobody wants me.",
-		"[When someone] Teases me,",
+		"[So I assume] I'm undesirable.",
+		"[When someone] Pokes at my insecurities,",
 		"[I assume] They're just messing with me.",
 		"[To feel that] They're just messing with me,",
 		"[I suppress] Horniness",
@@ -215,11 +215,11 @@ window.KITCHEN_KEYS = [
     "lines": [
 		"[I Fear] Compromise.",
 		"[I don't know I fear] Compromise,",
-		"[So I assume] I don't need to accomodate.",
+		"[So I assume] I don't need to accommodate.",
 		"[When someone] Pressures me,",
 		"[I assume] They are full of shit.",
 		"[To feel that] They are full of shit,",
-		"[I suppress] My higiene",
+		"[I suppress] My hygiene",
 		"[So I feel] Disgusting",
 		"[And] Poop in the shower. Why not?"
     ]
